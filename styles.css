@@ -454,6 +454,58 @@
     transition: 0.2s ease-in;
     cursor: pointer;
   }
+
+ /* Definir fundo preto para toda a página */
+body, html {
+  background-color: #131313; /* Fundo preto para a página */
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* Contêiner de produtos */
+.produto__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaço entre as cards */
+  flex-wrap: wrap; /* Permite que as cards se ajustem quando a tela for menor */
+  margin: 20px auto;
+  max-width: 1200px; /* Limite de largura */
+  background-color: #131313; /* Fundo preto para o contêiner */
+  padding: 20px; /* Padding para dar espaço entre o contêiner e os cards */
+  border-radius: 8px; /* Bordas arredondadas no contêiner */
+}
+
+/* Cartão de produto */
+.produto__card {
+  background-color: #131313; /* Fundo escuro para as cards */
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(25% - 20px); /* Largura das cards - considerando o espaço entre elas */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.produto__card:hover {
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.produto__img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.produto__descricao {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
   
   @media screen and (max-width: 960px) {
     .services {
